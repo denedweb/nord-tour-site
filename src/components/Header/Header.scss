@@ -1,0 +1,100 @@
+@import '../../styles/main.scss';
+
+.header {
+  height: 716px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  
+  &__container {
+    @include page-grid;
+    color: $whiteColor;
+  }
+  
+  &__topbar {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 124px;
+  }
+
+  &__logo {
+    width: 84px;
+    height: 38px;
+    background-image: url(../../images/icons/nord-logo.png);
+    background-size: 84px 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__user-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../images/icons/user-icon.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__tour {
+    grid-column: 2 / 6;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    width: 50%;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64.4px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__button-block {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  &__button-book {
+    background-color: $maineColor;
+    border: none;
+    border-radius: 8px;
+  }
+
+  &__button-learn {  
+    border: 1px solid $whiteColor;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  &__scroll {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.button {
+  width: 100%;
+  color: $whiteColor;
+  font-weight: 600;
+  font-size: 20px;
+}

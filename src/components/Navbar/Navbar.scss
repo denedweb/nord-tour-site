@@ -1,0 +1,13 @@
+@import '../../styles/main.scss';
+
+.navbar {
+  display: flex;
+  gap: 56px;
+
+  &__item {
+    color: $whiteColor;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
