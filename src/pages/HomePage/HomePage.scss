@@ -1,0 +1,84 @@
+@import '../../styles/main.scss';
+
+.home-page {
+  &__header {
+    position: relative;
+    height: 716px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__topbar {
+    @include page-grid;
+    color: $whiteColor;
+  }
+
+  &__tour {
+    grid-column: 2 / 6;
+  }
+
+  &__title {
+    grid-column: 2 / 4;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    grid-column: 2 / 6;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__button-block {
+    grid-column: 2 / 6;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  &__button-book {
+    background-color: $maineColor;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__button-learn {
+    border: 1px solid $whiteColor;
+    border-radius: 8px;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    line-height: 64px;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 16px;
+    left: calc(50% - 40px);
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__scroll-text {
+  }
+
+  &__scroll-arrow {
+    background-image: url(../../images/icons/arrow-down.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 5px;
+  }
+}
+
+.button {
+  width: 100%;
+  color: $whiteColor;
+  font-weight: 600;
+  font-size: 20px;
+}
